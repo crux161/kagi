@@ -1,26 +1,22 @@
-# key-ripper
+# 鍵　🔑　"key"
 
-A keyboard personalized for myself, designed in KiCad, with custom firmware written in Rust.
+An opensource keyboard solution written in Rust. Kagi currently uses a 75 key layout but this will be changing shortly!
 
-The story behind this board can be found in [this reddit post](https://www.reddit.com/r/MechanicalKeyboards/comments/vtlujd/i_built_a_keyboard_pcb_and_wrote_firmware_for_it/).
-
-I also gave a (time-constrained) talk on making this keyboard which you can view [here](https://www.youtube.com/watch?v=x7LQevYn7d0).
-Sadly I didn't get to cover everything I wanted to talk about when it comes to embedded Rust, but I hope you find it entertaining.
 
 ## Main Features and Requirements
 
-* Be cheap to manufacture (can easily be ordered and fabricated by JLCPCB, uses an RP2040)
-* USB C Connector
-* Have dedicated function keys
-* Reduce friction changing between a macbook keyboard and this one
-* Stay relatively compact
-* Full sized arrow keys with a gap (on the left and right) for easily finding the up arrow without looking
-* No right shift key (this allows for the arrow keys to sit below the Enter key, and I never use right shift)
+* Be cheap enough to DIY, @home
+* ✨USB-C✨
+* Have dedicated customizable keys
+* Better Japanese input support for QWERTY typers  
+* Suppor a massive number of additional keys thru add'l layer modes.
+* Normal Arrow Keys
 * Support for screw-in stabilizers first and foremost, along with snap-in stabilizers, and plate-mounted stabilizers when using a top plate
 * Easy to assemble - this will apply once I design a case for it
 * Firmware written in Rust, debuggable with knurling-rs
 
-## Current Version (v0.2)
+## Current Version (v0.2) 
+### Deprecated in Kagi   branch v0.1
 
 [v0.2 JLCPCB Production Files](https://github.com/bschwind/key-ripper/releases/tag/v0.2)
 
@@ -34,16 +30,6 @@ Version 0.2 improves upon some of the issues in v0.1, with some intentional choi
 
 (pictures to be added later)
 
-## Version v0.1
-
-Version 0.1 _works_ but there are some issues:
-
-* The PCB warps during SMT reflow because there is a copper pour on only one side
-* The silkscreens are not labeled well (SW1, SW2, SW3, etc. instead of Q, W, E, R, etc.)
-* The F5 key is slightly more to the left of the F6 key than it should be, which leads to incompatible top plates between v0.1 and v0.2
-
-Version 0.1 uses Kailh hotswap sockets. Combined with the top plate, this is good for trying out different switches, but adds complexity
-in the build process. It requires more parts, and I had to 3D print 3.4mm M2 spacers.
 
 [v0.1 JLCPCB Production Files](https://github.com/bschwind/key-ripper/releases/tag/v0.1)
 
@@ -55,9 +41,7 @@ in the build process. It requires more parts, and I had to 3D print 3.4mm M2 spa
 
 ## Production Files
 
-For every PCB fabrication order, I make a github release and upload the files I used to make the order.
-
-You can see a list of releases [here](https://github.com/bschwind/key-ripper/releases).
+The old design has not been updated, more to come soon!
 
 ## Create a Gerber File
 
